@@ -1,0 +1,21 @@
+Enabling the I2C Interface
+By default, the I2C interface on the Raspberry Pi is turned off. You must enable it before your sensor will work.
+
+Open the Raspberry Pi Configuration Tool:
+Open a terminal on your Raspberry Pi and type:
+
+
+Bash:
+sudo raspi-config
+
+
+Navigate to Interface Options:
+Use the arrow keys to select 3 Interface Options and press Enter.
+
+Enable I2C:
+Select I5 I2C from the list and press Enter. When it asks "Would you like the ARM I2C interface to be enabled?", select <Yes> and press Enter.
+
+Finish and Reboot:
+Select <Finish> to exit the configuration tool. It will ask if you want to reboot. Select <Yes>.
+
+After your Raspberry Pi reboots, the I2C interface will be active, and your ToF sensor will be ready to communicate with it.
